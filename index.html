@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Amazon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+ <div class="navbar">
+  <div class="nav-logo  border">
+    <a href="index.html"><div class="logo"></div></a>
+  </div>
+  <div class="nav-address border">
+    <p class="address1">deliver to</p>
+    <div class="icon">
+      <i class="fa-solid fa-location-dot"></i>
+      <p class="address2">india</p>
+    </div>
+  </div>
+  <div class="nav-search">
+   <input placeholder="search Amazon" class="search-input">
+   <div class="search-icon">
+   <i class="fa-solid fa-magnifying-glass"></i></div>
+ </div>
+   <div class="nav-singin border">
+    <p> <a href="singin.html"><span class="nav1">hello,sign in</span></a></p>
+   <a href="singin.html"> <p class="nav2">Account &list</p></a>
+  </div> 
+  <div class="nav-return border">
+    <p><span class="nav1">Returns</span></p>
+    <p class="nav2">& Order</p>
+  </div>
+  <div class="nav-cart border">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart 
+  </div> 
+ </div>
+ <div class="panel">
+  <div class="panel-all border">
+    <i class="fa-solid fa-bars"></i>
+    All
+  </div>
+  <div class="panel-ops">
+    <a href="in.html"><p>Today's Deals</p></a>
+   <a href="information.html"><p>Registry</p> </a>
+   <a href="information.html"><p>Customer Service</p></a>
+   <a href="in.html"><p>Gift Cards</p></a>
+  <a href="in.html"><p>Sell</p></a>
+   
+
+  </div>
+ <div class="panel-deals border">
+   <a href="in.html"> shop deals in electronics </a>
+  </div>
+ </div>
+
+  </header>
+  <div class="hero-section">
+     <button class="nav-btn left" onclick="prevSlide()">❮</button>
+    <button class="nav-btn right" onclick="nextSlide()">❯</button>
+    <div class="hero-msg">
+      <p>You are on amazon.com. You can also shop on Amazon India for millions of products with fast local delivery. <a href="#">Click here to go to amazon.in</a></p>
+    </div>
+  </div>
+  
+
+  <div class="shop-section">
+    <div class="box1 box"> <h2>Customers’ Most-Loved Fashion for you</h2>
+     <a href="in.html">
+      
+     <div class="container-img">
+    <img src="amazonimage1.jpg" class="box1-img" onclick="openProduct(this)"  
+     data-name="Derma Roller"
+     data-desc="  A microneedling tool designed to stimulate hair growth and improve skin texture.
+     Commonly used for beard growth, acne scars, and skin rejuvenation. The image shows a sleek black derma roller alongside its packaging."
+     data-price="₹499">
+
+    <img src="amazonimage2.jpg" class="box1-img" onclick="openProduct(this)" 
+     data-name="Tweezers Set with Case"
+     data-desc="A professional set of precision tweezers, 
+        including slant, pointed, and angled tips. These are used for eyebrow shaping, ingrown hair removal,
+         and fine grooming. Comes with a black leather storage case for portability and protection."
+     data-price="₹499">
+
+    <img src="amazonimage3.jpg" class="box1-img" onclick="openProduct(this)" 
+     data-name="ZGTS Derma Roller"
+     data-desc="This is a ZGTS Derma Roller—a microneedling tool used for skincare treatments. It features a handle and a roller head embedded with fine titanium or stainless steel microneedles. It is commonly used to promote collagen production, 
+        reduce acne scars, improve skin texture, and enhance the absorption of serums or skincare products."
+     data-price="₹499">
+
+    <img src="amazonimage4.jpg" class="box1-img" onclick="openProduct(this)"
+     data-name="Biotique Seaweed Cooling Anti-Fatigue Eye Gel"
+     data-desc="This is the Biotique Advanced Ayurveda Seaweed Cooling Anti-Fatigue Eye Gel. It's formulated with seaweed extracts and designed to relieve tired,
+        puffy eyes, especially from digital eye strain. The product aims to refresh and energize the under-eye area, giving a brighter and more awake look."
+     data-price="₹499">
+</div>
+
+      </a>
+        <a href="in.html"> Explore more</a>
+    </div>
+
+
+    <div class="box2 box"><h2>Get your game on</h2>
+     <a href="in.html"> 
+      <div class="anotherboximg">
+       <img src="amazongame.jpg" alt="game" onclick="openProduct(this)" 
+        data-name="CyberPowerPC Gamer Xtreme VR Gaming PC"
+     data-desc="CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i5-13400F 2.5GHz, GeForce RTX 5060 8GB, 16GB DDR5, 1TB PCIe 4.0 SSD, WiFi Ready & Windows 11 Home (GXiVR8060A40)"
+     data-price="₹499"> </div>
+    </a>
+      <a href="in.html"> Shop gaming</a>
+    </div>
+
+    <div class="box3 box"><h2> Super Shopping Day</h2>
+     <a href="in.html">
+       <div class="anotherbox3img">
+        <img src="amazonhero3.png" onclick="openProduct(this)"
+         data-name="Fashion Shirt"
+     data-desc="High quality cotton shirt"
+     data-price="₹499">
+     </div></a>
+      <a href="in.html"> Explore deal</a>
+    </div>
+
+    <div class="box4 box">
+  <h2>Wireless Tech</h2>
+  <div class="container2-img">
+    <div class="item">
+      <a href="in.html">
+        <img src="smartphone.png" class="box4-img" onclick="openProduct(this)"
+         data-name="OnePlus 11 5G"
+     data-desc="Experience flagship performance with the Snapdragon® 8 Gen 2 chip, 
+    120Hz Fluid AMOLED display, and Hasselblad camera system. 
+    Sleek design, super-fast charging, and all-day power in one device."
+     data-price="₹499">
+      </a>
+      <span class="imgname">Smartphone</span>
+    </div>
+
+    <div class="item">
+      <a href="in.html">
+        <img src="tap.png" class="box4-img" onclick="openProduct(this)"
+         data-name="Apple iPad (10th Generation)"
+     data-desc="Experience power and versatility with the new iPad — featuring a 10.9-inch Liquid Retina display, 
+    A14 Bionic chip, all-day battery, and stunning design. Perfect for work, study, and creativity."
+     data-price="₹499">
+      </a>
+      <span class="imgname">Tablets</span>
+    </div>
+
+    <div class="item">
+      <a href="in.html">
+        <img src="headphone.png" class="box4-img" onclick="openProduct(this)"
+         data-name="Headphone"
+     data-desc="Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Wireless Over-Ear Bluetooth, 40H Long ANC Playtime, Hi-Res Audio, Big Bass, Customize via an App, Transparency Mode"
+     data-price="₹499">
+      </a>
+      <span class="imgname">Headphone</span>
+    </div>
+
+    <div class="item">
+      <a href="in.html">
+        <img src="watch.png" class="box4-img" onclick="openProduct(this)"
+         data-name="Watch"
+     data-desc="Casio MDV106 Series |
+         Unisex Analog Watch | 200M WR | Stainless Steel Case | Resin Band | 2 Hand Analog (HR, Min, SEC) | Date Display |
+          Screw Down Crown/Screw Down Caseback | 3 Year Battery"
+     data-price="₹499">
+      </a>
+      <span class="imgname">Watches</span>
+    </div>
+
+  </div>
+ <a href="in.html"> Explore deal</a>
+</div>
+
+
+      <div class="box5 box"><h2>Most-loved watches</h2>
+        <a href="in.html">
+        <div class="container-box3">
+       <img src="watch.png" alt="men" onclick="openProduct(this)" 
+        data-name="Watch"
+     data-desc="Casio MDV106 Series |
+         Unisex Analog Watch | 200M WR | Stainless Steel Case | Resin Band | 2 Hand Analog (HR, Min, SEC) | Date Display |
+          Screw Down Crown/Screw Down Caseback | 3 Year Battery"
+     data-price="₹499">
+
+       <img src="womenw.png" alt="womenw" onclick="openProduct(this)"
+        data-name="Women Watch"
+     data-desc="Smart Watches for Women,1.27 HD Fitness Tracker Answer Make Call, Heart Rate Sleep/SpO2，Round Smart Watch for iPhone/Samsung/Android,IP68 Waterproof"
+     data-price="₹499">
+      </div>
+    </a>
+      <a href="in.html">  Discover more</a>
+  </div>
+    
+
+     <div class="box6 box"><h2>Up to 60% Off </h2>
+      <a href="in.html"> 
+         <div class="container-box4">
+      <img src="smartphone.png" alt="phone" onclick="openProduct(this)" 
+       data-name="OnePlus 11 5G"
+     data-desc="Experience flagship performance with the Snapdragon® 8 Gen 2 chip, 
+    120Hz Fluid AMOLED display, and Hasselblad camera system. 
+    Sleek design, super-fast charging, and all-day power in one device."
+     data-price="₹499">
+
+      <img src="iphone.png" alt="iphone" onclick="openProduct(this)"
+       data-name="iPhone 15 Pro"
+     data-desc="Apple iPhone 15 Pro, 256GB, Natural Titanium - Unlocked (Renewed Premium),
+        The ultimate iPhone with titanium design, A17 Pro chip, and a stunning Super Retina XDR display."
+     data-price="₹499">
+      </div>
+      </a>
+      <a href="in.html"> Discover more</a>
+      </div>
+  
+    <div class="box7 box"><h2>Up to 60% Off</h2>
+     <a href="in.html"><div class="container-box5">
+      <img src="laptop.jpg" alt="laptop"  onclick="openProduct(this)" 
+       data-name="Dell Inspiron 15 Business Laptop"
+     data-desc="Dell Inspiron 15 Business Laptop, 15.6 FHD Touchscreen, Intel 10-Core i5-1334U, 32GB RAM 1TB SSD, Wi-Fi 6, Win 11 Pro, Laptop Computer for Work School Home Office Professional Use
+4.74.7 out of 5 stars (13)
+1K+ bought in past month ."
+     data-price="₹499"> 
+
+      <img src="amazongame.jpg" alt="laptop"  onclick="openProduct(this)"
+       data-name="CyberPowerPC Gamer Xtreme VR Gaming PC"
+     data-desc="CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i5-13400F 2.5GHz, GeForce RTX 5060 8GB, 16GB DDR5, 1TB PCIe 4.0 SSD, WiFi Ready & Windows 11 Home (GXiVR8060A40)"
+     data-price="₹499"> 
+    </div>
+   </a>
+      <a href="in.html">Explore deals</a>
+     </div>
+
+  
+    <div class="box8 box"><h2>Up to 50% off | International brands</h2>
+      <a href="in.html"><div class="anotherbox8">
+        <img src="offer.png" alt="offer" onclick="openProduct(this)"
+         data-name="Fashion Shirt"
+     data-desc="High quality cotton shirt"
+     data-price="₹499">
+      </div></a>
+    <a href="in.html">See all offers </a> 
+   </div>
+
+   <div class="box9"><h2>Best Sellers in Computers & Accessories</h2>
+    <a href="in.html">
+    <div class="anotherbox9"> 
+      <img src="amazonshop.jpg" alt="smartphone" onclick="openProduct(this)"
+       data-name="Fashion Shirt"
+     data-desc="High quality cotton shirt"
+     data-price="₹499">
+      <img src="laptop.jpg" alt="laptop" onclick="openProduct(this)"
+       data-name="Fashion Shirt"
+     data-desc="High quality cotton shirt"
+     data-price="₹499">
+      <img src="amazongame.jpg" alt="game" onclick="openProduct(this)"
+       data-name="Fashion Shirt"
+     data-desc="High quality cotton shirt"
+     data-price="₹499">
+      <img src="offer.png" alt="offer" onclick="openProduct(this)" data-name="Fashion Shirt"
+     data-desc="High quality cotton shirt"
+     data-price="₹499">
+   </div>
+   </a>
+     </div>
+
+  <div class="divider"></div>
+  
+  <div class="signinbutton">
+   <div class="signin-title"><h3>See personalized recommendations</h3></div>
+   <div> <a href="singin.html"> <button>Sign in</button> </a></div>
+    
+   </form>
+   <div class="sign-newcustomer"> New Customer?<a>Start here</a></div>
+  
+  </div>
+  <hr>
+  <footer>
+ <div class="foot-panel1">
+       <a href="index.html">  Back to top</a>
+     </div>
+     <div class="foot-panel2">
+      <ul>
+        <h4>Get to know us</h4>
+       <a> Careers</a>
+       <a>Blog</a>
+       <a>About Amazon</a>
+       <a>Investor Relations</a>
+       <a>  Amazon Devices</a> 
+      <a>Amazon Science</a>
+    </ul>  
+       <ul>
+        <h4>Make Money with Us</h4>
+      <a> Sell products on Amazon </a>
+      <a> Sell on Amazon Business </a>
+      <a>Sell apps on Amazon </a>
+      <a>Become an Affiliate </a>
+      <a>Advertise Your Products </a>
+      <a>Self-Publish with Us </a>
+      <a>Host an Amazon Hub </a>
+      <a>See More Make Money with Us</p>
+      </ul>
+       <ul>
+        <h4>Amazon Payment Products</h4>
+       <a> Amazon Business Card</a>
+       <a>Reload Your Balance</a>
+       <a>About Amazon</a>
+       <a>Shop with Points</a>
+       <a>Amazon Currency Converter</a>
+      </ul>
+       <ul>
+        <h4>Let Us Help You</h4>
+      <a> Amazon and COVID-19</a>
+      <a>Your Account</a>
+      <a>Your Orders</a>
+      <a>Shipping Rates & Policies</a>
+      <a>Returns & Replacements</a>
+      <a>Manage Your Content and Devices</a>
+      <a>Help</a>
+      </ul>
+     </div>
+     <div class="foot-panel3">
+      <div class="logo"></div>
+     </div>
+     <div class="foot-panel4">
+      <div class="footer-page">
+      <ul>
+   <h5>AmazonMusic</h5>
+<a>Stream millions</a>
+<a>of songs</a>
+</ul>
+<ul>
+<h5 >Amazon Ads</h5>
+<a>Reach customers</a>
+<a>wherever they</a>
+<a>spend their time</a>
+</ul>
+<Ul>
+  <h5>6pm</h5>
+<a>Score deals</a>
+<a>on fashion brands</a>
+</Ul>
+<ul>
+<h5>AbeBooks</h5>
+<a>Books, art</a>
+<a>& collectibles</a>
+</ul>
+
+<ul>
+<h5>ACX</h5>
+<a>Audiobook Publishing</a>
+<a>Made Easy</a>
+</ul>
+
+<ul>
+<h5> sell on Amazon</h5>
+<a>Start a Selling Account</a>
+</ul>  
+<ul>
+<h5>veeqo</h5>
+<a>Shipping Software</a>
+<a>Inventory Management</a>
+</ul> 
+<ul>
+<h5>Amazon Business</h5>
+<a>Everything For
+Your Business</a>
+</ul>
+<ul>
+<h5>AmazonGlobal</h5>
+<a>Ship Orders</a>
+<a>Internationally</a>
+</ul>
+<ul>
+<h5>Amazon Web Services </h5>
+<a>Scalable Cloud</a>
+<a>Computing Services</a>
+</ul>
+<ul>
+<h5>Audible</h5>
+<a>Listen to Books & Original</a>
+<a>Audio Performances</a>
+</ul>
+<ul>
+<h5>Box Office Mojo</h5>
+<a>Find Movie</a>
+<a>Box Office Data</a>
+</ul>
+<ul>
+<h5>Goodreads</h5>
+<a>Book reviews</a>
+<a>& recommendations</a>
+</ul>
+<ul>
+<h5>IMDb</h5>
+<a>Movies, TV</a>
+<a>& Celebrities</a>
+</ul>
+<ul>
+<h5>IMDbPro</h5>
+<a>Get Info Entertainment</a>
+<a>Professionals Need</a>
+</ul>
+<ul>
+<h5>Kindle Direct Publishing</h5>
+<a>Indie Digital & Print Publishing</a>
+<a>Made Easy</a>
+</ul> 
+<ul>
+<h5>Prime Video Direct</h5>
+<a>Video Distribution</a>
+<a>Made Easy</a>
+</ul>
+<ul>
+<h5>Shopbop</h5>
+<a>Designer</a>
+<a>Fashion Brands</a>
+</ul>
+<ul>
+  <h5>Woot!</h5>
+<a>Deals and</a>
+<a>Shenanigans</a>
+</ul>
+<ul>
+<h5>Zappos</h5>
+<a>Shoes &</a>
+<a>Clothing</a>
+</ul>
+<ul>
+<h5>Ring</h5>
+<a>Smart Home</a>
+<a>Security Systems</a>
+</ul>
+<ul>
+<h5>eero WiFi</h5>
+<a>Stream 4K Video</a>
+<a>in Every Room</a>
+</ul>
+<ul>
+<h5>Blink</h5>
+<a>Smart Security</a>
+<a>for Every Home</a>
+</ul>
+<ul>
+<h5>Neighbors App</h5>
+<a>Real-Time Crime</a>
+<a>& Safety Alerts</a>
+</ul>
+<ul>
+<h5>Amazon Subscription Boxes</h5>
+<a>Top subscription boxes right to your door</a>
+</ul>
+<ul>
+<h5>PillPack</h5>
+<a>Pharmacy Simplified</a>
+      </ul>
+      </div>
+     </div>
+     <div class="foot-panel5">
+      <div class="pages">
+        <a>Condition of use</a>
+        <a>Privacy Notice </a>
+        <a> Consumer health data privacty disclosure</a>
+      </div>
+
+      <div class="copyright">
+         1996-2025, Amazon.com, Inc. or its affiliates
+      </div>
+     </div>
+  </footer>
+
+  <script src="rajesh.js"></script>
+</body>
+</html>
+	
+	

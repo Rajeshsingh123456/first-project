@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>signin</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="form">
+    <div class="singinpage"> <!-- Class name same rakha -->
+      <h1>Sign in or Create Account</h1>
+
+      <label for="email">
+        <p>Enter Your email</p>
+        <input type="email" id="email" placeholder="Enter your email">
+      </label>
+
+      <label for="mobile">
+        <p>Enter your mobile number</p>
+        <input type="text" id="mobile" placeholder="Enter your mobile number" required>
+      </label>
+
+      <!-- Changed to button for JS validation -->
+      <div>
+        <button onclick="validateForm()">Continue</button>
+      </div>
+
+      <p>New to Amazon? <a href="newuser.html">Create an account</a></p>
+    </div>
+  </div>
+
+  <script>
+    function validateForm() {
+      const email = document.getElementById('email').value.trim();
+      const mobile = document.getElementById('mobile').value.trim();
+
+      if (email === '' || mobile === '') {
+        alert("Please fill in both email and mobile number.");
+        return;
+      }
+
+      // Redirect to index.html only if both fields are filled
+      window.location.href = "index.html";
+    }
+  </script>
+</body>
+</html>

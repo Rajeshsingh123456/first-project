@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Create Amazon Account</title>
+  <style>
+    body {
+      background-color: white;
+      text-transform: capitalize;
+      
+    }
+
+    .new-user {
+      display: grid;
+      place-items: center;
+      height: 100vh;
+      width: 100vw;
+    }
+
+    .new {
+      background-color: #EFE9E3;
+      border: 3px solid white;
+      border-radius: 10px;
+      width: 30%;
+     color: black;
+      height: 70%;
+    }
+
+    h2 {
+      font-size: 23px;
+      text-align: center;
+      line-height: 1;
+      margin-bottom: 20px;
+    }
+
+    .new label {
+      font-size: 1.7rem;
+      text-align: center;
+       margin-left: 1rem;
+       margin-bottom: 4rem;      
+    }
+
+    input {
+      width: 90%;
+      height: 30px;
+      text-align:start;
+      font-size: 1rem;
+      margin-left: 0.5rem;
+      margin-bottom: 20px;
+      
+    }
+
+    button {
+      text-align: center;
+      height: 40px;
+      width: 90%;
+      font-size: 1.5rem;
+      font-family: Arial;
+      border-radius: 10px;
+      margin-left: 1rem;
+      cursor: pointer;
+      background-color: rgb(5, 46, 123);
+      color: black;
+    }
+
+button:hover{
+  background-color: rgb(187, 87, 11);
+
+}
+
+p {
+      margin: 22px;
+      text-align: center;
+    }
+
+a {
+      text-decoration: none;
+      color: inherit;
+    }
+ a:hover{
+  color: rgb(187, 94, 18);
+ }
+
+  
+    
+
+  </style>
+</head>
+<body>
+  <div class="new-user">
+    <div class="new">
+      <h2>Let’s create your free Amazon Business account</h2>
+      <label for="email">
+        Enter an email <br>
+        <input type="email" id="emailInput" required placeholder="Enter email">
+      </label>
+      <button id="getStartedBtn">Get started</button>
+
+      <p>Already an Amazon customer? <a href="singin.html">Sign in</a></p>
+    </div>
+  </div>
+
+  <script>
+    const button = document.getElementById("getStartedBtn");
+    const emailInput = document.getElementById("emailInput");
+
+    button.addEventListener("click", function () {
+      const email = emailInput.value.trim();
+
+      // Simple email validation
+      const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+      if (emailPattern.test(email)) {
+       
+        window.location.href = "index.html";
+      } else {
+        alert("Please enter a valid email address before continuing.");
+        emailInput.focus();
+      }
+    });
+  </script>
+</body>
+</html>

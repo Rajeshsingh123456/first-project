@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products</title>
+</head>
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+<style>
+*{
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-family: Arial;
+    
+   
+}
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden; 
+  max-width: 100vw; 
+}
+
+
+.navbar {
+    height: 60px;
+    width: 100%;
+     color: white;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.nav-logo {
+    height: 40px;
+    width: 130px;
+  
+}
+.logo {
+    background-image: url("image.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.border{
+    border: 1.5px solid  transparent;
+ 
+}
+.border:hover{
+    border: 1.5px solid white;
+     padding: 4px 4px 7px 4px ;
+}
+/**box2**/
+.address1{
+    color: #cccccc;
+    font-size:  0.80rem; 
+}
+.address2 {
+    font-size: 1rem;
+
+}
+.icon{
+    display: flex;
+    align-items: center;
+    
+}
+/* box3 */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgba(255, 166, 0, 0.956);
+    width: 750px;
+    height: 40px;
+    border-radius: 3px;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+
+}
+
+.search-icon {
+    width: 45px;
+   display: flex;
+   justify-content:center ;
+   align-items: center;
+   font-size: 1.2rem;
+   background-color:#febd68;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   color: black;
+}
+.nav-singin a{
+    color: inherit;
+    
+}
+/* box4 */
+.nav1
+{
+    font-size: 0.7rem;
+
+}
+.nav2{
+    font-size:.85rem ;
+    font-weight: 700;
+}
+
+/* box6 */
+.nav-cart i{
+    font-size: 30px;
+  
+}
+.nav-cart{
+    font-size: 0.85rem;
+    margin-right: 10px;
+}
+/* panel */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.panel-ops p{
+ display: inline;
+ margin-left:1rem; 
+
+
+}
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+
+}
+.panel-ops a{
+    color: inherit;
+    text-decoration: none;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight: 800;
+
+
+}
+.panel-deals a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.top-image {
+  width: 100%;
+  background-color: white;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 30px 0;
+  border-bottom: 1px solid #ddd;
+  z-index: 10;
+}
+
+.top-image img {
+  width: 500px; 
+  height: auto;
+  object-fit: contain;
+}
+
+
+
+.img-container {
+    display: flex;
+    width: 100%;
+    padding: 20px;
+    
+
+}
+
+.img-box {
+    display: flex;
+    justify-content: start;
+    flex-wrap: wrap;
+    width: 100%;
+    background-color:white;
+
+}
+
+.box1,.box2,.box3,.box4,
+.box5,.box6,.box7,.box8,.box9,.box10{
+    width: 23%;
+    display: flex;
+     flex-direction: column;
+     align-items: center;
+     padding: 10px;
+    background:white;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    border: 1px solid transparent;
+    border-radius: 6px;
+    margin-bottom: 20px;
+    
+}
+.box1 img,.box7 img,.box8 img,.box9 img,.box10 img{
+    width: 50%;
+    height:200px;
+    object-fit: cover;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+}
+
+.box1 img:hover,.box7 img:hover,.box8 img:hover,.box9 img:hover,.box10 img:hover{
+    transform: scale(0.9);
+}
+
+.box2 img,.box3 img,.box4 img,.box5 img,.box6 img{
+    object-fit: cover;
+    object-position: center top;
+     width: 60%;
+    height: 200px;
+    border-radius: 6px;
+    transition: transform 0.3s ease;
+   
+}
+.box2 img:hover,.box3 img:hover,.box4 img:hover,.box5 img:hover,.box6 img:hover{
+    transform: scale(0.9);
+}
+
+button{
+    text-align: center;
+    width: 70%;
+    height: 45px;
+    border-radius: 20px;
+    border: 2px solid white;
+   background-color:rgb(222, 154, 65);
+   color: white;
+   font-size: 20px;
+   margin-top: auto;
+}
+button:hover
+{
+    transform: scale(1);
+    background-color: #c37a31;
+}
+
+.box1 p,.box2 p,.box3 p,
+.box4 p,.box5 p,.box6 p,.box7 p
+,.box10 p,.box9 p,.box8 p{
+    line-height: 1.6;
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+    font-family:'Poppins', sans-serif;
+
+}
+.box1 p:hover,
+.box2 p:hover,.box3 p:hover,.box4 p:hover,.box5 p:hover
+,.box6 p:hover,.box7 p:hover,.box8 p:hover,.box9 p:hover,
+.box10 p:hover{
+    color:rgb(93, 15, 15);
+}
+
+.product-top {
+    width: 100%;
+    display: flex;
+   justify-content: center;
+   align-items: flex-start;
+    gap: 10px;
+    padding: 10px 0;
+    background: white;
+    border-bottom: 1px solid black;
+}
+
+.product-info {
+    width: 40%;
+    text-align: center;
+}
+
+.product-info h1 {
+    font-size: 29px;
+    margin-bottom: 10px;
+    margin-top: 3rem;
+    
+}
+
+.product-info p {
+    font-size: 20px;
+    line-height: 2;
+}
+
+.product-info h2 {
+    color: green;
+    font-size: 40px;
+    margin-top: 30px;
+}
+
+
+.product-image {
+    width: 350px;
+}
+
+.product-image img {
+    width: 350px;
+    height: auto;
+     margin-left: 60px;
+    object-fit: cover;
+}
+
+
+</style>
+<body>
+    <header>
+    <div class="navbar">
+  <div class="nav-logo  border">
+    <a href="index.html"><div class="logo"></div></a>
+  </div>
+  <div class="nav-address border">
+    <p class="address1">deliver to</p>
+    <div class="icon">
+      <i class="fa-solid fa-location-dot"></i>
+      <p class="address2">india</p>
+    </div>
+  </div>
+  <div class="nav-search">
+   <select class="search-select">
+    <option>All
+    </option>
+   </select>
+   <input placeholder="search Amazon" class="search-input">
+   <div class="search-icon">
+   <i class="fa-solid fa-magnifying-glass"></i></div>
+  </div>
+   <div class="nav-singin border">
+    <p> <a href="singin.html"><span class="nav1">hello,sign in</span></a></p>
+   <a href="singin.html"> <p class="nav2">Account &list</p></a>
+  </div> 
+  <div class="nav-return border">
+    <p><span class="nav1">Returns</span></p>
+    <p class="nav2">& Order</p>
+  </div>
+  <div class="nav-cart border">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart 
+  </div> 
+ </div>
+ <div class="panel">
+  <div class="panel-all border">
+    <i class="fa-solid fa-bars"></i>
+    All
+  </div>
+  <div class="panel-ops">
+   <a href="in.html"><p>Today's Deals</p> </a>
+   <a href="information.html"> <p>Registry</p></a>
+  <a href="information.html"> <p>Customer Service</p> </a>
+  <a href="in.html"> <p>Gift Cards</p> </a>
+    <a href="in.html"><p>Sell</p> </a>
+   
+
+  </div>
+  <div class="panel-deals border">
+   <a href="in.html"> shop deals in electronics</a>
+  </div>
+ </div>
+ </div>
+
+ <!-- ✅ Product Top Section -->
+<div class="product-top">
+    
+    <div class="product-info">
+        <h1 id="selectedName"></h1>
+        <p id="selectedDesc"></p>
+        <h2 id="selectedPrice"></h2>
+    </div>
+
+    <div class="product-image">
+        <img id="selectedProductImg" src="">
+    </div>
+
+</div>
+
+
+
+ <div class="img-container">
+    <div class="img-box">
+   <div class="box1">
+    <img id="productImg" src="amazonimage1.jpg" alt="Amazon">
+    <h1>Derma Roller</h1>
+    <p>
+    A microneedling tool designed to stimulate hair growth and improve skin texture.
+     Commonly used for beard growth, acne scars, and skin rejuvenation. The image shows a sleek black derma roller alongside its packaging.
+    </p>
+    <button>Add to Cart</button>
+   </div>
+   <div class="box2">
+    <img id="productImg" src="amazonimage2.jpg" alt="amazon">
+    <h1>Tweezers Set with Case</h1>
+    <p>A professional set of precision tweezers, 
+        including slant, pointed, and angled tips. These are used for eyebrow shaping, ingrown hair removal,
+         and fine grooming. Comes with a black leather storage case for portability and protection.</p>
+    <button>Add to Cart</button>
+   </div>
+   <div class="box3">
+    <img src="amazonimage3.jpg" alt="a">
+    <h1>ZGTS Derma Roller</h1>
+    <p>This is a ZGTS Derma Roller—a microneedling tool used for skincare treatments. It features a handle and a roller head embedded with fine titanium or stainless steel microneedles. It is commonly used to promote collagen production, 
+        reduce acne scars, improve skin texture, and enhance the absorption of serums or skincare products.</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box4">
+    <img src="amazonimage4.jpg" alt="a">
+    <h1>Biotique Seaweed Cooling Anti-Fatigue Eye Gel</h1>
+    <p>This is the Biotique Advanced Ayurveda Seaweed Cooling Anti-Fatigue Eye Gel. It's formulated with seaweed extracts and designed to relieve tired, <br>
+        puffy eyes, especially from digital eye strain. The product aims to refresh and energize the under-eye area, giving a brighter and more awake look.</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box5">
+    <img src="amazonimage4.jpg" alt="a">
+    <h1>rr</h1>
+    <p>anjnshjs</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box6">
+    <img src="amazonshop.jpg" alt="a">
+    <h1>rr</h1>
+    <p>anjnshjs</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box7">
+    <img src="headphone.png" alt="a">
+    <h1>rr</h1>
+    <p>anjnshjs</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box8">
+    <img src="smartphone.png" alt="a">
+    <h1>rr</h1>
+    <p>anjnshjs</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box9">
+    <img src="watch.png" alt="a">
+    <h1>watches</h1>
+    <p>Casio MDV106 Series |
+         Unisex Analog Watch | 200M WR | Stainless Steel Case | Resin Band | 2 Hand Analog (HR, Min, SEC) | Date Display |
+          Screw Down Crown/Screw Down Caseback | 3 Year Battery</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img src="womenw.png" alt="a">
+    <h1>Watches</h1>
+    <p>Smart Watches for Women,1.27" HD Fitness Tracker Answer/Make Call, Heart Rate/Sleep/SpO2，Round Smart Watch for iPhone/Samsung/Android,IP68 Waterproof</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img src="offer.png" alt="a">
+    <h1>Portable Power Station.</h1>
+    <p> 1500W with Smart Display & Multi-Device Support Power anywhere, anytime! This high-capacity 1500W portable power station comes equipped with a smart LCD display that shows real-time battery status, input/output power, and remaining run time. Perfect for camping, outdoor work, emergency backup, and off-grid adventures.
+         Supports multiple devices simultaneously — from smartphones and laptops to mini-fridges and CPAP machines. Compact, durable, and easy to carry with its ergonomic handle.</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img src="iphone.png" alt="a">
+    <h1>iPhone 15 Pro</h1>
+    <p> Apple iPhone 15 Pro, 256GB, Natural Titanium - Unlocked (Renewed Premium),
+        The ultimate iPhone with titanium design, A17 Pro chip, and a stunning Super Retina XDR display. </p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img src="laptop.jpg" alt="a">
+    <h1>Dell Inspiron 15 Business Laptop</h1>
+    <p>Dell Inspiron 15 Business Laptop, 15.6" FHD Touchscreen, Intel 10-Core i5-1334U, 32GB RAM 1TB SSD, Wi-Fi 6, Win 11 Pro, Laptop Computer for Work School Home Office Professional Use
+4.74.7 out of 5 stars (13)
+1K+ bought in past month</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img id="productImg" src="tap.png" alt="a">
+    <h1>Apple iPad (10th Generation)</h1>
+    <p>Experience power and versatility with the new iPad — featuring a 10.9-inch Liquid Retina display, 
+    A14 Bionic chip, all-day battery, and stunning design. Perfect for work, study, and creativity.</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img id="productImg" src="amazongame.jpg" alt="PC">
+    <h1>CyberPowerPC Gamer Xtreme VR Gaming PC</h1>
+    <p> CyberPowerPC Gamer Xtreme VR Gaming PC, Intel Core i5-13400F 2.5GHz, GeForce RTX 5060 8GB, 16GB DDR5, 1TB PCIe 4.0 SSD, WiFi Ready & Windows 11 Home (GXiVR8060A40)</p>
+    <button>add to Cart</button>
+   </div>
+   
+   <div class="box10">
+   
+ <img id="productImg" src="amazonshop.jpg" alt="a">
+    <h1>rr</h1>
+    <p>anjnshjs</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img src="headphone.png" alt="a">
+    <h1>Headphone</h1>
+    <p>Soundcore by Anker Q20i Hybrid Active Noise Cancelling Headphones, Wireless Over-Ear Bluetooth, 40H Long ANC Playtime, Hi-Res Audio, Big Bass, Customize via an App, Transparency Mode</p>
+    <button>add to Cart</button>
+   </div>
+   <div class="box10">
+    <img src="smartphone.png" alt="a">
+    <h1>OnePlus 11 5G</h1>
+    <p>Experience flagship performance with the Snapdragon® 8 Gen 2 chip, 
+    120Hz Fluid AMOLED display, and Hasselblad camera system. 
+    Sleek design, super-fast charging, and all-day power in one device.</p>
+    <button>add to Cart</button>
+   </div>
+
+ </div>
+ </div>
+    </header>
+
+<script>
+const img = localStorage.getItem("selectedImage");
+const name = localStorage.getItem("selectedName");
+const desc = localStorage.getItem("selectedDesc");
+const price = localStorage.getItem("selectedPrice");
+
+// Agar data mila hai to show karo
+if (img) {
+    document.getElementById("selectedProductImg").src = img;
+    document.getElementById("selectedName").innerText = name;
+    document.getElementById("selectedDesc").innerText = desc;
+    document.getElementById("selectedPrice").innerText = price;
+}
+</script>
+
+</script>
+
+
+
+</body>
+</html>

@@ -1,0 +1,631 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <style>
+*{
+    margin: 0px;
+    padding: 0px;
+    text-transform: capitalize;
+    font-family: arial;
+    
+   
+}
+body{
+    background-color: #6F4E37;
+}
+.navbar {
+    height: 60px;
+    width: 100%;
+     color: white;
+    background-color: #0f1111;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+.nav-logo {
+    height: 40px;
+    width: 130px;
+  
+}
+.logo {
+    background-image: url("image.png");
+    background-size: cover;
+    background-position: center top;
+    background-repeat: no-repeat;
+    height: 100%;
+    width: 100%;
+    margin-top: 0.2rem;
+}
+
+.border{
+    border: 1.5px solid  transparent;
+ 
+}
+.border:hover{
+    border: 1.5px solid white;
+     padding: 4px 4px 7px 4px ;
+}
+/**box2**/
+.address1{
+    color: #cccccc;
+    font-size:  0.80rem; 
+}
+.address2 {
+    font-size: 1rem;
+
+}
+.icon{
+    display: flex;
+    align-items: center;
+    
+}
+/* box3 */
+.nav-search{
+    display: flex;
+    justify-content: space-evenly;
+    background-color:rgba(255, 166, 0, 0.956);
+    width: 750px;
+    height: 40px;
+    border-radius: 3px;
+}
+.nav-search:hover{
+    border: 2px solid orange;
+}
+.search-select{
+    background-color: #f3f3f3;
+    width: 50px;
+    text-align: center;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+}
+.search-input {
+    width: 100%;
+    font-size: 1rem;
+    border: none;
+
+}
+
+.search-icon {
+    width: 45px;
+   display: flex;
+   justify-content:center ;
+   align-items: center;
+   font-size: 1.2rem;
+   background-color:#febd68;
+   border-top-right-radius: 3px;
+   border-bottom-right-radius: 3px;
+   color: black;
+}
+.nav-singin a{
+    color: inherit;
+    
+}
+/* box4 */
+.nav1
+{
+    font-size: 0.7rem;
+
+}
+.nav2{
+    font-size:.85rem ;
+    font-weight: 700;
+}
+
+/* box6 */
+.nav-cart i{
+    font-size: 30px;
+  
+}
+.nav-cart{
+    font-size: 0.85rem;
+    font-weight: 700;
+    margin-right: 10px;
+}
+/* panel */
+.panel{
+    height: 40px;
+    background-color: #222f3d;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: space-around;
+}
+.panel-ops p{
+display: inline;
+margin-left:1rem; 
+
+}
+.panel-ops {
+    width: 70%;
+    font-size: 0.85rem;
+
+}
+.panel-ops a{
+    color: inherit;
+    text-decoration: none;
+}
+.panel-deals{
+    font-size: 0.9rem;
+    font-weight:700;
+
+
+}
+.panel-deals a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.welcome{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: beige;
+    font-size: 44px;
+    margin: 3rem 0rem 1rem 2rem;
+
+}
+.para{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0rem 0 4rem 2rem;
+    color: beige;
+    font-size: 25px;
+}
+
+.information-deal{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+     margin-top: 2rem;
+    width: 100%;
+    height: 100vh;
+  
+
+}
+.Track{
+    width: 25%;
+    height: 35%;
+    border: 1px solid white;
+   text-align: center;
+    background-color: beige;
+  position: relative;
+
+}
+.Track h3{
+    font-size: 40px;
+    color: black;
+    margin-bottom: 1rem;
+}
+.Track p{
+    color: #967259;
+    margin-bottom: 2rem;
+    font-size: 25px;
+}
+
+.Track button{
+    width: 50%;
+    text-align: center;
+    height: 10%;
+    position:absolute;
+    bottom: 10px;
+    left:6rem;
+    text-transform: capitalize;
+   transition: transform 0.2s ease-in;
+   border: 2px solid black;
+    
+}
+button:hover{
+    background-color: beige;
+    transform:scale(1.2);
+}
+
+
+
+/* footer */
+footer{
+    margin-top: 40px;
+}
+.foot-panel1 a{
+    background-color: #37475a;
+    color: white;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.85rem;
+    
+}
+.foot-panel1 a:hover{
+    background-color:#75828e;
+  
+}
+
+.foot-panel2 {
+    background-color: #222f3d;
+    color: white;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+}
+ul {
+    margin-top: 20px;
+}
+ul p{
+    display: block;
+    font-size: 0.85rem;
+    color:#dddddd;
+    margin-top: 10px;
+}
+ul h4{
+    font-size: 20px;
+    color: white;
+}
+.foot-panel3 {
+    background-color: #222f3d;
+    color: white;
+    border-top: 1px solid black ;
+    height: 90px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+}
+.foot-panel3 .logo{
+     height: 50px;
+     width: 170px;
+     background-image: url("image.png");
+    background-size: cover;
+    
+}
+
+.footer-page {
+   background-color: #131A22;
+    color: #dddddd;
+    height: 400px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+   gap: 25px;
+
+}
+.foot-panel4 ul{
+    text-transform: capitalize;
+    
+ 
+}
+ul h5{
+    color: white;
+    font-size: 15px;
+}
+ul a {
+  display: block;
+  font-size: 12px;
+  color: #999;
+  text-decoration: none;
+}
+
+ul a:hover {
+  text-decoration: underline;
+}
+
+
+.foot-panel5{
+    background-color: #0f1111;
+    color: white;
+    height: 50px;
+     text-align: center;
+    font-size: 0.7rem; 
+    padding-top: 10px;
+    padding-bottom: 30px;  
+}
+.pages{
+  padding-top: 25px;
+  
+}
+.pages a{
+   margin-left: 40px;
+}
+
+.copyright{
+    padding-top: 10px;
+}
+
+
+</style>
+</head>
+<body>
+    <header>
+    <div class="navbar">
+  <div class="nav-logo  border">
+    <a href="index.html"><div class="logo"></div></a>
+  </div>
+  <div class="nav-address border">
+    <p class="address1">deliver to</p>
+    <div class="icon">
+      <i class="fa-solid fa-location-dot"></i>
+      <p class="address2">india</p>
+    </div>
+  </div>
+  <div class="nav-search">
+   <select class="search-select">
+    <option>All
+    </option>
+   </select>
+   <input placeholder="search Amazon" class="search-input">
+   <div class="search-icon">
+   <i class="fa-solid fa-magnifying-glass"></i></div>
+  </div>
+   <div class="nav-singin border">
+    <p> <a href="singin.html"><span class="nav1">hello,sign in</span></a></p>
+   <a href="singin.html"> <p class="nav2">Account &list</p></a>
+  </div> 
+  <div class="nav-return border">
+    <p><span class="nav1">Returns</span></p>
+    <p class="nav2">& Order</p>
+  </div>
+  <div class="nav-cart border">
+    <i class="fa-solid fa-cart-shopping"></i>
+    Cart 
+  </div> 
+ </div>
+ <div class="panel">
+  <div class="panel-all border">
+    <i class="fa-solid fa-bars"></i>
+    All
+  </div>
+  <div class="panel-ops">
+   <a href="in.html"> <p>Today's Deals</p></a>
+   <a href="information.html"> <p>Registry</p></a>
+   <a href="information.html"><p>Customer Service</p></a>
+   <a href="in.html"><p>Gift Cards</p></a>
+   <a href="in.html"><p>Sell</p></a>
+   
+
+  </div>
+  <div class="panel-deals border">
+   <a href="in.html"> shop deals in electronics </a>
+  </div>
+ </div>
+    </header>
+    <h1 class="welcome">welcome to Amazon clone help and Services</h1>
+    <p class="para">We can help you take care of most things here, sign in to get started.</p>
+    <div class="information-deal">
+        <div class="Track">
+    <h3>Manage Your Account</h3>
+    <p>You can update your password, address, or saved payment methods anytime.</p>
+     <button>Learn More</button>
+    </div>
+    <div class="Track">
+    <h3>Returns & Refunds</h3>
+    <p>Learn how to return or replace an item.</p>
+    <button>Learn More</button>
+    </div>
+    <div class="Track">
+    <h3>Help and Service</h3>
+    <p>Learn how to return or replace an item.</p>
+    <button>Learn More</button>
+    </div>
+
+   <div class="Track"> <h3>Payment Issues</h3>
+<p>hjsdhhdjhj</p>
+<button>Learn More</button>
+</div>
+<div class="Track">
+    <h3>More Resources</h3>
+    <p></p>
+    <button>Learn More</button>
+    </div>
+    <div class="Track">
+    <h3>Your Orders & Shopping</h3>
+    <p></p>
+    <button>Learn More</button>
+    </div>
+
+    </div>
+
+
+    <footer>
+ <div class="foot-panel1">
+       <a href="index.html">  Back to top</a>
+     </div>
+     <div class="foot-panel2">
+      <ul>
+        <h4>Get to know us</h4>
+       <a> Careers</a>
+       <a>Blog</a>
+       <a>About Amazon</a>
+       <a>Investor Relations</a>
+       <a>  Amazon Devices</a> 
+      <a>Amazon Science</a>
+    </ul>  
+       <ul>
+        <h4>Make Money with Us</h4>
+      <a> Sell products on Amazon </a>
+      <a> Sell on Amazon Business </a>
+      <a>Sell apps on Amazon </a>
+      <a>Become an Affiliate </a>
+      <a>Advertise Your Products </a>
+      <a>Self-Publish with Us </a>
+      <a>Host an Amazon Hub </a>
+      <a>See More Make Money with Us</p>
+      </ul>
+       <ul>
+        <h4>Amazon Payment Products</h4>
+       <a> Amazon Business Card</a>
+       <a>Reload Your Balance</a>
+       <a>About Amazon</a>
+       <a>Shop with Points</a>
+       <a>Amazon Currency Converter</a>
+      </ul>
+       <ul>
+        <h4>Let Us Help You</h4>
+      <a> Amazon and COVID-19</a>
+      <a>Your Account</a>
+      <a>Your Orders</a>
+      <a>Shipping Rates & Policies</a>
+      <a>Returns & Replacements</a>
+      <a>Manage Your Content and Devices</a>
+      <a>Help</a>
+      </ul>
+     </div>
+     <div class="foot-panel3">
+      <div class="logo"></div>
+     </div>
+     <div class="foot-panel4">
+      <div class="footer-page">
+      <ul>
+   <h5>AmazonMusic</h5>
+<a>Stream millions</a>
+<a>of songs</a>
+</ul>
+<ul>
+<h5 >Amazon Ads</h5>
+<a>Reach customers</a>
+<a>wherever they</a>
+<a>spend their time</a>
+</ul>
+<Ul>
+  <h5>6pm</h5>
+<a>Score deals</a>
+<a>on fashion brands</a>
+</Ul>
+<ul>
+<h5>AbeBooks</h5>
+<a>Books, art</a>
+<a>& collectibles</a>
+</ul>
+
+<ul>
+<h5>ACX</h5>
+<a>Audiobook Publishing</a>
+<a>Made Easy</a>
+</ul>
+
+<ul>
+<h5> sell on Amazon</h5>
+<a>Start a Selling Account</a>
+</ul>  
+<ul>
+<h5>veeqo</h5>
+<a>Shipping Software</a>
+<a>Inventory Management</a>
+</ul> 
+<ul>
+<h5>Amazon Business</h5>
+<a>Everything For
+Your Business</a>
+</ul>
+<ul>
+<h5>AmazonGlobal</h5>
+<a>Ship Orders</a>
+<a>Internationally</a>
+</ul>
+<ul>
+<h5>Amazon Web Services </h5>
+<a>Scalable Cloud</a>
+<a>Computing Services</a>
+</ul>
+<ul>
+<h5>Audible</h5>
+<a>Listen to Books & Original</a>
+<a>Audio Performances</a>
+</ul>
+<ul>
+<h5>Box Office Mojo</h5>
+<a>Find Movie</a>
+<a>Box Office Data</a>
+</ul>
+<ul>
+<h5>Goodreads</h5>
+<a>Book reviews</a>
+<a>& recommendations</a>
+</ul>
+<ul>
+<h5>IMDb</h5>
+<a>Movies, TV</a>
+<a>& Celebrities</a>
+</ul>
+<ul>
+<h5>IMDbPro</h5>
+<a>Get Info Entertainment</a>
+<a>Professionals Need</a>
+</ul>
+<ul>
+<h5>Kindle Direct Publishing</h5>
+<a>Indie Digital & Print Publishing</a>
+<a>Made Easy</a>
+</ul> 
+<ul>
+<h5>Prime Video Direct</h5>
+<a>Video Distribution</a>
+<a>Made Easy</a>
+</ul>
+<ul>
+<h5>Shopbop</h5>
+<a>Designer</a>
+<a>Fashion Brands</a>
+</ul>
+<ul>
+  <h5>Woot!</h5>
+<a>Deals and</a>
+<a>Shenanigans</a>
+</ul>
+<ul>
+<h5>Zappos</h5>
+<a>Shoes &</a>
+<a>Clothing</a>
+</ul>
+<ul>
+<h5>Ring</h5>
+<a>Smart Home</a>
+<a>Security Systems</a>
+</ul>
+<ul>
+<h5>eero WiFi</h5>
+<a>Stream 4K Video</a>
+<a>in Every Room</a>
+</ul>
+<ul>
+<h5>Blink</h5>
+<a>Smart Security</a>
+<a>for Every Home</a>
+</ul>
+<ul>
+<h5>Neighbors App</h5>
+<a>Real-Time Crime</a>
+<a>& Safety Alerts</a>
+</ul>
+<ul>
+<h5>Amazon Subscription Boxes</h5>
+<a>Top subscription boxes right to your door</a>
+</ul>
+<ul>
+<h5>PillPack</h5>
+<a>Pharmacy Simplified</a>
+      </ul>
+      </div>
+     </div>
+     <div class="foot-panel5">
+      <div class="pages">
+        <a>Condition of use</a>
+        <a>Privacy Notice </a>
+        <a> Consumer health data privacty disclosure</a>
+      </div>
+
+      <div class="copyright">
+         1996-2025, Amazon.com, Inc. or its affiliates
+      </div>
+     </div>
+  </footer>
+
+
+</body>
+</html>
