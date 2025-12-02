@@ -10,7 +10,7 @@ let index = 0;
 function showSlide() {
   hero.style.backgroundImage = `url(${images[index]})`;
 }
-
+/////////
 function nextSlide() {
   index = (index + 1) % images.length;
   showSlide();
